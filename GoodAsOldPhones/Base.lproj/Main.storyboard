@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ADN-tw-uKJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8B0-VL-W37">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Product View Controller-->
+        <!--Item-->
         <scene sceneID="gBx-GJ-8ZZ">
             <objects>
                 <viewController id="uJy-qM-5FX" customClass="ProductViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,21 +18,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBY-Oi-7c5">
-                                <rect key="frame" x="0.0" y="-99" width="375" height="766"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whv-eb-MQ7">
-                                <rect key="frame" x="20" y="114" width="335" height="41"/>
-                                <state key="normal" image="button-addtocart"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PhoneName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR9-fZ-HSY">
-                                <rect key="frame" x="20" y="53" width="335" height="21"/>
+                                <rect key="frame" x="20" y="85" width="335" height="21"/>
                                 <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whv-eb-MQ7">
+                                <rect key="frame" x="20" y="114" width="335" height="41"/>
+                                <state key="normal" image="button-addtocart"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99835396398574627" green="1" blue="0.93583571415303868" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="i5i-JS-WjS"/>
+                    <navigationItem key="navigationItem" id="YhK-KQ-dBp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="productImageView" destination="vBY-Oi-7c5" id="cLE-uz-aMf"/>
@@ -41,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2s0-3G-gtx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217.5" y="106.5"/>
+            <point key="canvasLocation" x="1989.5" y="298.5"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="56N-Gf-OKF">
@@ -125,7 +127,7 @@
                     </subviews>
                 </scrollView>
             </objects>
-            <point key="canvasLocation" x="607.5" y="106.5"/>
+            <point key="canvasLocation" x="799.5" y="-426.5"/>
         </scene>
         <!--Products Table View Controller-->
         <scene sceneID="fWs-Ao-8Ye">
@@ -136,13 +138,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="82" id="UiR-ip-7CY">
-                                <rect key="frame" x="0.0" y="50" width="375" height="82"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="82" id="UiR-ip-7CY">
+                                <rect key="frame" x="0.0" y="114" width="375" height="82"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UiR-ip-7CY" id="OAJ-6D-zP9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="81"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uJy-qM-5FX" kind="push" identifier="ShowProduct" id="CwK-Kh-6gT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -150,11 +155,30 @@
                             <outlet property="delegate" destination="ADN-tw-uKJ" id="mEg-EF-G3K"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="qGE-ac-fad"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5B-4X-qse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002.5" y="106.5"/>
+            <point key="canvasLocation" x="1323.5" y="299.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yov-xS-JC0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8B0-VL-W37" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Jj-Mc-2MR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ADN-tw-uKJ" kind="relationship" relationship="rootViewController" id="weP-vE-dGR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKg-oZ-6xK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="299"/>
         </scene>
     </scenes>
     <resources>

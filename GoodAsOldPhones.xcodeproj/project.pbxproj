@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E3BC16D1CFB75B40077EBD7 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3BC16C1CFB75B40077EBD7 /* ProductsTableViewController.swift */; };
+		8E4B9E2F1CFF8A770078F632 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B9E2E1CFF8A770078F632 /* Product.swift */; };
 		8EB7CF891CF22F69006833F9 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7CF881CF22F69006833F9 /* ProductViewController.swift */; };
 		8EB7CF8B1CF23C80006833F9 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7CF8A1CF23C80006833F9 /* ContactViewController.swift */; };
 		8EDF39DD1CF2202B0015A644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF39DC1CF2202B0015A644 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8E3BC16C1CFB75B40077EBD7 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		8E4B9E2E1CFF8A770078F632 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8EB7CF881CF22F69006833F9 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		8EB7CF8A1CF23C80006833F9 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		8EDF39D91CF2202B0015A644 /* GoodAsOldPhones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodAsOldPhones.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 				8EB7CF881CF22F69006833F9 /* ProductViewController.swift */,
 				8EB7CF8A1CF23C80006833F9 /* ContactViewController.swift */,
 				8E3BC16C1CFB75B40077EBD7 /* ProductsTableViewController.swift */,
+				8E4B9E2E1CFF8A770078F632 /* Product.swift */,
 				8EDF39E01CF2202B0015A644 /* Main.storyboard */,
 				8EDF39E31CF2202B0015A644 /* Assets.xcassets */,
 				8EDF39E51CF2202B0015A644 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				8EB7CF891CF22F69006833F9 /* ProductViewController.swift in Sources */,
 				8E3BC16D1CFB75B40077EBD7 /* ProductsTableViewController.swift in Sources */,
+				8E4B9E2F1CFF8A770078F632 /* Product.swift in Sources */,
 				8EDF39DD1CF2202B0015A644 /* AppDelegate.swift in Sources */,
 				8EB7CF8B1CF23C80006833F9 /* ContactViewController.swift in Sources */,
 			);
